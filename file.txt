@@ -7,14 +7,11 @@ class pangram
         String str=br.readLine();
         str=str.toLowerCase();int f=0;
         for(char c='a';c<='z'; c++)
-        {
-            
             if(str.indexOf(c)<0)
             {
                 f=-1;System.out.println("not pangram");
                 break;
-            } 
-        }
+            }
         if(f==0)
         System.out.println("pangram");
         
